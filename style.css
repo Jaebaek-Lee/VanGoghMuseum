@@ -35,7 +35,7 @@
             #grid div {
                 line-height: 25px;
             }
-            @media(max-width:800px)
+            @media only screen and (max-width:800px)
             {
                 h1 {
                     border-bottom: none;
