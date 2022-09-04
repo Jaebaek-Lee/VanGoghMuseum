@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>portrait</title>
-        <meta charset = "utf-8">
+        <title>Thinking Vincent</title>
         <style>
+            body { margin: 0;}
             a {
                 color:black;
                 text-decoration: none;
@@ -19,26 +19,73 @@
             ul {
                 border-right: 1px solid black;
                 width: 150px;
-                padding: 20px;
+                padding: 30px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top: 23px;
                 margin: 0;
             }
             li {
-                font-size:16px;
-                padding: 3px;
+                font-size:15px;
+                padding: 4px;
+            }
+            #grid {
+                display:grid;
+                grid-template-columns: 190px 1fr 3fr;
+            }
+            #main {
+                padding : 30px;
+                padding-right: 0px;
+            }
+            #grid div {
+                line-height: 25px;
             }
         </style>
         <h1><a href = "index.html">Thinking Vincent</a></h1>
     </head>
+
     <body>
-        <!--
-        <ul>
-            <li><a href = "portrait.html">Self-Portrait of 2019</a></li>
-            <li><a href = "cafe.html">Café Terrace at Night</a></li>
-            <li><a href = "starry.html">The Starry Night</a></li>
-        </ul>
-        -->
-        <div style = "text-align: center; padding-top: 30px;"><img src = "starry night.jpg" width="30%"></div>
-        <h2 style="text-align: center; margin-bottom: 0px;">The Starry Night</h2>
-        <h3 style="text-align: center; margin-top: 0px;">(2019)</h3>
+        <div id = "grid">
+            <ul>
+                <strong>
+                    <li><a href = "cafe.html">Café Terrace at Night</a></li> 
+                    <li><a href = "portrait.html">Smiling Vincent</a></li>
+                    <li><a href = "flower.html">Sunflowers</a></li>
+                    <li style="color: red;"><a href = "starry.html">The Starry Night</a></li>
+                </strong>
+            </ul>
+            <div id = "main">
+                <img src = "starry night.jpg" width="100%"><br>
+                <strong><div style="text-align: center;">The Starry Night<br>(2019)</div></strong>
+            </div>
+            <div id = "main">
+            <strong><div style="font-size: 30px; ">1888.6.18</strong></div><br>
+            <strong>테오에게.</strong><br><br>
+                언제쯤이면 늘 마음속으로 생각하고 있는 별이 빛나는 하늘을 그릴 수 있을까?
+                <br>멋진 친구 시프리앙이 말한 대로
+                <br>가장 아름다운 그림은 침대에 누워서 파이프 담배를 입에 물고서는 꿈꾸는,
+                <br>그러나 결코 그리지 않은 그림인지도 모르지.
+                <br><br>타라스콩이나 루앙에 가려면 기차를 타야 하는 것처럼
+                <br>별까지 가기 위해서는 죽음을 맞이해야 한다.
+                <br>죽으면 기차를 탈 수 없듯 살아 있는 동안에는 별에 갈 수 없다.
+                <br>늙어서 평화롭게 죽는다는 건 별까지 걸어간다는 것이지.
+                <br><br><strong><div style="font-size: 30px; ">1888.6.xx</strong></div><br>
+                내가 확신을 가지고 모든 것을 안다고 말할 수는 없다.
+                <br>하지만 지도에서 도시나 마을을 가리키는 검은 점을 보면 꿈을 꾸게 되는 것처럼,
+                <br>별이 반짝이는 밤하늘은 늘 나를 꿈꾸게 한다.
+            </div>
+        </div>
+        <p>
+            <div id="disqus_thread"></div>
+             <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-taekjw2ffn.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
     </body>
 </html>

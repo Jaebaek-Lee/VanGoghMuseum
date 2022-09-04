@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>portrait</title>
-        <meta charset = "utf-8">
+        <title>Thinking Vincent</title>
         <style>
+            body { margin: 0;}
             a {
                 color:black;
                 text-decoration: none;
@@ -19,26 +19,67 @@
             ul {
                 border-right: 1px solid black;
                 width: 150px;
-                padding: 20px;
+                padding: 30px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top: 23px;
                 margin: 0;
             }
             li {
-                font-size:16px;
-                padding: 3px;
+                font-size:15px;
+                padding: 4px;
+            }
+            #grid {
+                display:grid;
+                grid-template-columns: 190px 1fr 3fr;
+            }
+            #main {
+                padding : 30px;
+                padding-right: 0px;
+            }
+            #grid div {
+                line-height: 25px;
             }
         </style>
         <h1><a href = "index.html">Thinking Vincent</a></h1>
     </head>
+
     <body>
-        <!--
-        <ul>
-            <li><a href = "portrait.html">Self-Portrait of 2019</a></li>
-            <li><a href = "cafe.html">Café Terrace at Night</a></li>
-            <li><a href = "starry.html">The Starry Night</a></li>
-        </ul>
-        -->
-        <div style = "text-align: center; padding-top: 30px;"><img src = "cafe.jpg" width="30%"></div>
-        <h2 style="text-align: center; margin-bottom: 0px;">Café Terrace at Night</h2>
-        <h3 style="text-align: center; margin-top: 0px;">(2019)</h3>
+        <div id = "grid">
+            <ul>
+                <strong>
+                    <li style="color: red;"><a href = "cafe.html">Café Terrace at Night</a></li> 
+                    <li><a href = "portrait.html">Smiling Vincent</a></li>
+                    <li><a href = "flower.html">Sunflowers</a></li>
+                    <li><a href = "starry.html">The Starry Night</a></li>
+                </strong>
+            </ul>
+            <div id = "main">
+                <img src = "cafe.jpg" width="100%"><br>
+                <strong><div style="text-align: center;">Café Terrace at Night<br>(2019)</div></strong>
+            </div>
+            <div id = "main">
+            <strong><div style="font-size: 30px; ">1888.9.12</div></strong><br>
+                <strong>빌레민에게.</strong><br><br>
+                푸른 밤, 카페테라스의 커다란 가스등이 불을 밝히고 있어.
+                <br>그 위로는 별이 빛나는 파란 하늘이 보이지.
+                <br>아를에 와 바로 이곳에서 밤을 그리는 것은 매우 놀라운 일이야.
+                <br>창백하리만치 옅은 하얀 빛은 그저 그런 밤 풍경을 제거해버리는 유일한 방법이지.
+                <br><br>나는 검은색을 전혀 사용하지 않고 아름다운 파란색과 보라색, 초록색만을 사용했어.
+                <br>그리고 밤을 배경으로 빛나는 광장은 노란색으로 그렸단다.
+                <br>특히 이 밤하늘에 별을 찍어 넣는 순간은 정말 행복했단다.
+        </div>
+        <p>
+            <div id="disqus_thread"></div>
+             <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-taekjw2ffn.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
     </body>
 </html>
