@@ -9,7 +9,9 @@
                 border-bottom:1px solid;
                 border-color: black;
                 margin: 0;
-                padding: 25px;
+                padding: 10px;
+                padding-top: 40px;
+                line-height: 30px;
             }
             ul {
                 border-right: 1px solid black;
