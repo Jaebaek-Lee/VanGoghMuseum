@@ -4,12 +4,19 @@
         <title>Thinking Vincent</title>
         <link rel = "stylesheet" href="style.css">
             <h1><a href = "index.html">Thinking Vincent</a><br>
-            <input type="button" value="Day" onclick="
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black'; ">
-            <input type="button" value="Night" onclick="
-            document.querySelector('body').style.backgroundColor = '#1A1B28';
-            document.querySelector('body').style.color = '#D7D7D7'; "></h1>
+                <div class = "mid">
+                    <input id ="night_day" type="button" value="Night" onclick="
+                    if(document.querySelector('#night_day').value === 'Night'){
+                        document.querySelector('body').style.backgroundColor = '#1A1B28';
+                        document.querySelector('body').style.color = '#D7D7D7';
+                        document.querySelector('#night_day').value = 'Day';
+                    } else {
+                        document.querySelector('body').style.backgroundColor = 'white';
+                        document.querySelector('body').style.color = 'black';
+                        document.querySelector('#night_day').value = 'Night';
+                    }
+                    ">
+                    </div></h1>
     </head>
 
     <body>

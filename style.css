@@ -26,6 +26,13 @@
                 font-size:15px;
                 padding: 4px;
             }
+            .mid {
+                border-right: none;
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0px;
+            }
             #grid {
                 display:grid;
                 grid-template-columns: 190px 1fr 3fr;
