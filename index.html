@@ -8,18 +8,28 @@
     <body>
         <h1><a href = "index.html">Thinking Vincent</a><br>
             <div class = "mid">
-                <input id ="night_day" type="button" value="Night" onclick="
-                if(document.querySelector('#night_day').value === 'Night'){
-                    document.querySelector('body').style.backgroundColor = '#1A1B28';
-                    document.querySelector('body').style.color = '#D7D7D7';
-                    document.querySelector('#night_day').value = 'Day';
+                <input type="button" value="Night" onclick="
+                var target = document.querySelector('body');
+                var list = document.querySelectorAll('a');
+                if(this.value === 'Night'){
+                    target.style.backgroundColor = '#1A1B28';
+                    target.style.color = '#D7D7D7';
+                    this.value = 'Day';
+                    for (i = 0; i < list.length; ++i)
+                    {
+                        list[i].style.color = '#D7D7D7';
+                    }
                 } else {
-                    document.querySelector('body').style.backgroundColor = 'white';
-                    document.querySelector('body').style.color = 'black';
-                    document.querySelector('#night_day').value = 'Night';
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    this.value = 'Night';
+                    for (i = 0; i < list.length; ++i)
+                    {
+                        list[i].style.color = 'black';
+                    }
                 }
                 ">
-                </div></h1>
+            </div></h1>
         <div id = "grid">
             <ul>
                 <strong>
