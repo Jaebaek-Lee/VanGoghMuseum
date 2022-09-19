@@ -3,33 +3,16 @@
     <head>
         <title>Thinking Vincent</title>
         <link rel = "stylesheet" href="style.css">
-            <h1><a href = "index.html">Thinking Vincent</a><br>
-                <div class = "mid">
-                    <input type="button" value="Night" onclick="
-                    var target = document.querySelector('body');
-                    var list = document.querySelectorAll('a');
-                    if(this.value === 'Night'){
-                        target.style.backgroundColor = '#1A1B28';
-                        target.style.color = '#D7D7D7';
-                        this.value = 'Day';
-                        for (i = 0; i < list.length; ++i)
-                        {
-                            list[i].style.color = '#D7D7D7';
-                        }
-                    } else {
-                        target.style.backgroundColor = 'white';
-                        target.style.color = 'black';
-                        this.value = 'Night';
-                        for (i = 0; i < list.length; ++i)
-                        {
-                            list[i].style.color = 'black';
-                        }
-                    }
-                    ">
-                </div></h1>
+        <script src="javascript.js"></script>
     </head>
 
     <body>
+        <h1><a href = "index.html">Thinking Vincent</a><br>
+            <div class = "mid">
+                <input type="button" value="Night" onclick="
+                nightMod(this);
+                ">
+            </div></h1>
         <div id = "grid">
             <ul>
                 <strong>
